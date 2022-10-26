@@ -24,6 +24,8 @@ ul {
     padding: 12px;
     color: #fff;
     overflow: auto;
+    font-size: 17px;
+    font-family: fantasy;
 }
 
 input:focus {
@@ -35,7 +37,17 @@ input:focus {
 input {
     padding: 12px;
     border-radius: 12px;
-    background: #DF6DA4;
+    background: #b6f3be;
     border: none;
 
+}
+
+
+li {
+    padding: 12px;
+    border-radius: 12px;
+    background: #28ca3e;
+    border: none;
+    margin-top: 7px;
+    width: max-content;
 }
