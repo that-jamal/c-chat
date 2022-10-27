@@ -4,11 +4,23 @@
     box-sizing: border-box;
 }
 
+
+
+@font-face {
+    font-family: Cyber;
+    src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+    font-display: swap;
+}
+
+
 body {
     display: flex;
     height: 100vh;
-    background: #252525;
+    background-image: url("https://t4.ftcdn.net/jpg/02/87/98/41/240_F_287984109_irUO2tGLLN9nLrzAEFxyWaHTo0HP6qTe.jpg");
+    /*background: #252525;*/
     justify-content: center;
+    font-family: "cyber", sans-serif;
+    font-size: 25px;
 }
 
 main {
@@ -24,30 +36,75 @@ ul {
     padding: 12px;
     color: #fff;
     overflow: auto;
-    font-size: 17px;
-    font-family: fantasy;
-}
+    font-size: 26px;
 
-input:focus {
-    outline: none;
 }
 
 
+::placeholder {
+    font-family: "cyber", sans-serif;
+    font-size: 25px;
+}
+
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+
+
+::-webkit-scrollbar-thumb {
+    background: red;
+    --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
+    --primary-lightness: 50;
+    --shadow-primary-hue: 180;
+    box-shadow: inset -3px 0 0 var(--shadow-primary);
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
 
 input {
-    padding: 12px;
-    border-radius: 12px;
+    padding: 20px;
     background: #b6f3be;
     border: none;
 
+    --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
+    --primary-lightness: 50;
+    --shadow-primary-hue: 180;
+    font-size: var(--font-size);
+    outline: transparent;
+    letter-spacing: 2px;
+    min-width: 70px;
+    box-shadow: inset -3px 0 0 var(--shadow-primary);
+    clip-path: polygon(-10% -10%, 120% -10%, 120% 120%, 35px 70px, -30px 5px);
+
 }
 
-
+/* updated cyber button code making % to px to give all the messages the same style*/
 li {
     padding: 12px;
-    border-radius: 12px;
     background: #28ca3e;
     border: none;
     margin-top: 7px;
     width: max-content;
+    --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
+    --primary-lightness: 50;
+    --shadow-primary-hue: 180;
+    font-size: var(--font-size);
+    outline: transparent;
+    letter-spacing: 2px;
+    border: 0;
+    min-width: 70px;
+    box-shadow: inset -3px 0 0 var(--shadow-primary);
+    clip-path: polygon(-10% -10%, 120% -10%, 120% 120%, 35px 70px, -30px 5px);
+
 }
+
+
+
+
+
+/*orignal cyber button styling from https://www.sitepoint.com/recreate-the-cyberpunk-2077-button-glitch-effect-in-css/ */
