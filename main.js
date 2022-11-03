@@ -22,26 +22,30 @@ const db = getDatabase(app);
 
 const chatRef = ref(db, "/chat");
 
-//listen to database
+// listens for database changes
 onChildAdded(chatRef, function (data) {
-    //create message element and append to list element
-    const message = document.createElement("li");
-    message.innerText = data.val();
-    list.appendChild(message);
-});
 
-// chat
+    // create element and append to list element
+    const message = document.createElement("li")
+    message.innerText = new Date(data.key).toLocaleDateString("fi-FI") + ": " + data.val();
+
+    list.appendChild(message)
+})
+
 const input = document.querySelector("input");
-const list = document.querySelector("ul");
+const list = document.querySelector("ul")
 
 input.addEventListener("keypress", function (event) {
     if (event.key == "Enter") {
-        // create unique id for messages
-        const messageId = Date.now();
-        // send data 
-        set(ref(db, 'chat/' + messageId), input.value);
+
+        // create 'unique' id for message
+        const messageId = new Date().toUTCString();
+
+        // send to database
+        set(ref(db, "chat/" + messageId), input.value)
+
 
         // clear input
         input.value = "";
     }
-});
+})

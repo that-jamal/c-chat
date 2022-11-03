@@ -68,7 +68,7 @@ ul {
 
 input {
     padding: 20px;
-    background: #b6f3be;
+    background: #00ffd2;
     border: none;
 
     --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
@@ -86,7 +86,7 @@ input {
 /* updated cyber button code making % to px to give all the messages the same style*/
 li {
     padding: 12px;
-    background: #efff10;
+    background: #fcee0a;
     border: none;
     margin-top: 7px;
     width: max-content;
