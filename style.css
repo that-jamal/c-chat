@@ -103,8 +103,17 @@ li {
     font-family: "cyber", sans-serif;
 }
 
+.modal-body {
+    background-color:#fcee0a;
+    
+}
 
-
+.modal-header {
+    background-color: #fcee0a;
+}
+.modal-footer {
+    background-color: #fcee0a;
+}
 
 
 /*orignal cyber button styling from https://www.sitepoint.com/recreate-the-cyberpunk-2077-button-glitch-effect-in-css/ */
