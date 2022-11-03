@@ -34,7 +34,7 @@ main {
 ul {
     list-style-type: none;
     padding: 12px;
-    color: #fff;
+    color: rgb(0, 0, 0);
     overflow: auto;
     font-size: 26px;
 
@@ -86,7 +86,7 @@ input {
 /* updated cyber button code making % to px to give all the messages the same style*/
 li {
     padding: 12px;
-    background: #28ca3e;
+    background: #efff10;
     border: none;
     margin-top: 7px;
     width: max-content;
@@ -100,7 +100,7 @@ li {
     min-width: 70px;
     box-shadow: inset -3px 0 0 var(--shadow-primary);
     clip-path: polygon(-10% -10%, 120% -10%, 120% 120%, 35px 70px, -30px 5px);
-
+    font-family: "cyber", sans-serif;
 }
 
 
